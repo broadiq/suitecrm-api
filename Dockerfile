@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:latest
 MAINTAINER John Lutz <jlutz@broadiq.com>
 
 ENV BOOTAPP_USR bootapp
