@@ -11,5 +11,5 @@ ADD suitecrm.api-0.1.0.jar app.jar
 
 EXPOSE $SERVER_PORT
 
-ENTRYPOINT exec java -Xmx256m -Djava.security.egd=file:/dev/./urandom -jar /app.jar
-#ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+#ENTRYPOINT exec java -Xmx256m -Djava.security.egd=file:/dev/./urandom -jar /app.jar
+ENTRYPOINT ["java","-Xmx256m -Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
